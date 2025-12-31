@@ -1,36 +1,180 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Apartment Guide PWA 🏡📱
 
-## Getting Started
+A modern, offline-friendly apartment guide built with Next.js and PWA technology, designed for short-term rentals (Airbnb, Booking, serviced apartments).
 
-First, run the development server:
+Guests scan a QR code and instantly access everything they need — no app installation required.
 
-```bash
+Guests can quickly find:
+
+    📶 Wi-Fi details
+
+    🏠 House rules
+
+    🚨 Emergency instructions
+
+    🔎 Where things are located
+
+    🧾 Checkout checklist
+
+    🧭 Local recommendations
+
+✨ Why This Exists
+
+Most guests:
+
+    Don't read printed manuals
+
+    Lose Wi-Fi information
+
+    Panic during emergencies
+
+    Ask the same questions repeatedly
+
+This project solves that by providing:
+
+    One simple digital guide
+
+    Offline access after first open
+
+    Mobile-first UX with large touch targets
+
+    Multi-language support (EN / NO)
+
+🧠 Core Features
+🏠 Apartment Guide
+
+    House rules shown first (UX-driven)
+
+    Checkout checklist
+
+    Clean, readable layout
+
+📶 Wi-Fi
+
+    Network name & password
+
+    One-tap copy
+
+    Optional troubleshooting notes
+
+🚨 Emergency
+
+    Emergency contacts (phone / WhatsApp)
+
+    Visual instructions with images
+
+    Step-by-step actions
+
+    STOP & CALL warnings for dangerous situations
+
+🔎 Find Items
+
+    Search tools, appliances, safety equipment
+
+    Clear location descriptions
+
+    Category grouping
+
+    Image previews
+
+🌍 Multi-Language
+
+    English & Norwegian support
+
+    Language toggle (no layout shift)
+
+    Content driven entirely from JSON
+
+⚡ Progressive Web App (PWA)
+
+    Works offline after first visit
+
+    Add to home screen
+
+    Fast loading
+
+    QR-code friendly
+
+🛠 Tech Stack
+
+    Next.js 16 (App Router)
+
+    TypeScript
+
+    Tailwind CSS
+
+    PWA (Serwist / Service Worker)
+
+    Static + Dynamic Rendering
+
+    JSON-driven content
+
+📁 Project Structure
+text
+
+src/
+├─ app/
+│   ├─ page.tsx              # Landing page
+│   ├─ g/[slug]/page.tsx     # Apartment guide page
+│   ├─ layout.tsx
+│   └─ globals.css
+│
+├─ lib/
+│   └─ guide/
+│       ├─ loadGuide.ts
+│       └─ types.ts
+│
+public/
+├─ guides/
+│   └─ narvik/
+│       ├─ guide.json        # Apartment content (EN / NO)
+│       └─ images/           # Apartment images
+│
+├─ manifest.webmanifest
+└─ icons/
+
+🚀 Development
+bash
+
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Runs locally at: http://localhost:3000
+🏗 Production Build
+bash
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+npm run build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+✔ Successfully builds as:
 
-## Learn More
+    Static homepage
 
-To learn more about Next.js, take a look at the following resources:
+    Dynamic guide routes (/g/[slug])
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    Fully PWA-ready
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🧭 UX Principles Used
 
-## Deploy on Vercel
+    House rules shown first to reduce friction
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    Large touch targets for mobile users
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    Minimal scrolling
+
+    No layout shifts when switching language
+
+    Clear visual hierarchy
+
+    Emergency always one tap away
+
+📌 Roadmap (Optional)
+
+    Admin UI for editing guide.json
+
+    QR code generator per apartment
+
+    Anonymous usage analytics
+
+    Additional language support
+
+    Host dashboard for multi-property management
