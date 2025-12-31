@@ -1,36 +1,198 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Apartment Guide PWA 🏡📱
 
-## Getting Started
+A modern, offline-friendly apartment guide built with Next.js and PWA technology, designed for short-term rentals (Airbnb, Booking, serviced apartments).
 
-First, run the development server:
+Guests scan a QR code and instantly get:
 
-```bash
+Wi-Fi details
+
+House rules
+
+Emergency instructions
+
+Where things are located
+
+Checkout checklist
+
+Local recommendations
+
+All without installing an app.
+
+✨ Why This Exists
+
+Most guests:
+
+Don’t read printed manuals
+
+Lose Wi-Fi info
+
+Panic in emergencies
+
+Ask the same questions repeatedly
+
+This project solves that by providing:
+
+One simple digital guide
+
+Works offline after first open
+
+Mobile-first, big buttons, zero friction
+
+Supports multiple languages (EN / NO)
+
+🧠 Core Features
+🏠 Apartment Guide
+
+House rules (shown first for UX)
+
+Checkout checklist
+
+Clear, readable layout
+
+📶 Wi-Fi
+
+Network name & password
+
+One-tap copy
+
+Optional troubleshooting notes
+
+🚨 Emergency
+
+Emergency contacts (phone / WhatsApp)
+
+Visual instructions (images)
+
+Step-by-step actions
+
+“STOP & CALL” warnings for dangerous situations
+
+🔎 Find Items
+
+Search tools, appliances, safety equipment
+
+Location descriptions
+
+Category grouping
+
+Image previews
+
+🌍 Multi-Language
+
+English & Norwegian support
+
+Language toggle (no layout jump)
+
+Content driven from JSON
+
+⚡ PWA (Progressive Web App)
+
+Offline access after first visit
+
+Add to home screen
+
+Fast loading
+
+QR-code friendly
+
+🛠 Tech Stack
+
+Next.js 16 (App Router)
+
+TypeScript
+
+Tailwind CSS
+
+PWA (Serwist / Service Worker)
+
+Static + Dynamic Rendering
+
+JSON-driven content
+
+
+
+src/
+ ├─ app/
+ │   ├─ page.tsx              # Landing page
+ │   ├─ g/[slug]/page.tsx     # Apartment guide page
+ │   ├─ layout.tsx
+ │   └─ globals.css
+ │
+ ├─ lib/
+ │   └─ guide/
+ │       ├─ loadGuide.ts
+ │       └─ types.ts
+ │
+public/
+ ├─ guides/
+ │   └─ narvik/
+ │       ├─ guide.json        # Apartment content (EN / NO)
+ │       └─ images/           # Apartment images
+ │
+ ├─ manifest.webmanifest
+ └─ icons/
+
+
+🚀 Development
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Runs locally at:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+http://localhost:3000
 
-## Learn More
+🏗 Production Build
+npm run build
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✔ Successfully builds as:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Static homepage
 
-## Deploy on Vercel
+Dynamic guide routes (/g/[slug])
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+PWA-ready
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+🧭 UX Principles Used
+
+House rules shown first (reduce friction)
+
+Large touch targets
+
+Minimal scrolling
+
+No layout shifts when changing language
+
+Clear visual hierarchy
+
+Emergency always one tap away
+
+📌 Roadmap (Optional)
+
+Admin UI for editing guide.json
+
+QR code generator per apartment
+
+Analytics (anonymous usage)
+
+More language support
+
+Host dashboard (multi-property)
+
+👤 Author
+
+Built for real-world hospitality use — not a demo toy.
+
+If you want this adapted for:
+
+Hotels
+
+Guesthouses
+
+Serviced apartments
+
+Resorts
+
+…the architecture already supports it.
