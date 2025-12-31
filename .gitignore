@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Next.js build output
+.next/
+out/
+
+# Production build
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Env files (VERY IMPORTANT)
+.env
+.env.local
+.env.production
+.env.development
+
+# PWA / Service worker build artifacts (generated)
+workbox-*.js
+sw.js.map
+
+# Turbopack cache
+.turbo/
+
+# Optional
+coverage/
+node_modules/
+.next/
+.turbo/
+.env*

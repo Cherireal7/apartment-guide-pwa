@@ -1,0 +1,230 @@
+{
+  "apartmentId": "narvik",
+  "name": {
+    "en": "Nordic Fjord View Apartment",
+    "no": "Nordisk Fjordutsikt Leilighet"
+  },
+  "location": {
+    "en": "Narvik, Norway",
+    "no": "Narvik, Norge"
+  },
+  "description": {
+    "en": "Modern apartment with mountain and fjord views.",
+    "no": "Moderne leilighet med utsikt mot fjell og fjord."
+  },
+
+  "language": {
+    "primary": "en",
+    "available": ["en", "no"]
+  },
+
+  "emergency": {
+    "contacts": [
+      {
+        "label": { "en": "Host (Erik) — WhatsApp", "no": "Vert (Erik) — WhatsApp" },
+        "type": "whatsapp",
+        "value": "+4711122233",
+        "icon": "message-circle"
+      },
+      {
+        "label": { "en": "Building Manager — Call", "no": "Bygningsansvarlig — Ring" },
+        "type": "phone",
+        "value": "+4711223344",
+        "icon": "building"
+      },
+      {
+        "label": { "en": "Emergency Services — 112", "no": "Nødetater — 112" },
+        "type": "phone",
+        "value": "112",
+        "icon": "alert-circle"
+      }
+    ],
+
+    "safetyNotes": [
+      {
+        "en": "If there is smoke/fire, sparks, or a strong burning smell: leave the apartment and call emergency services.",
+        "no": "Hvis det er røyk/brann, gnister eller sterk brent lukt: forlat leiligheten og ring nødetatene."
+      },
+      {
+        "en": "Do not attempt repairs beyond the simple steps shown here. If unsure, call the host.",
+        "no": "Ikke forsøk reparasjoner utover de enkle trinnene her. Er du usikker, ring verten."
+      }
+    ],
+
+    "doNot": [
+      { "en": "Do NOT open electrical panels beyond the breaker switches.", "no": "IKKE åpne elektriske skap utover sikringsbryterne." },
+      { "en": "Do NOT remove covers, wires, or outlets.", "no": "IKKE fjern deksler, ledninger eller stikkontakter." },
+      { "en": "Do NOT disassemble plumbing fixtures or pipes.", "no": "IKKE demonter rørdeler eller armatur." },
+      { "en": "Do NOT press router reset unless the host tells you.", "no": "IKKE trykk på router-reset med mindre verten sier det." },
+      { "en": "If unsure: STOP and call the host.", "no": "Er du usikker: STOPP og ring verten." }
+    ],
+
+    "items": [
+      {
+        "id": "water-shutoff",
+        "type": "water",
+        "title": { "en": "🚰 Water Shutoff Valve", "no": "🚰 Hovedstoppekran (vann)" },
+        "locationText": {
+          "en": "Under the kitchen sink, right side, blue handle.",
+          "no": "Under kjøkkenvasken, høyre side, blå hendel."
+        },
+        "steps": [
+          { "en": "Open the cabinet under the sink.", "no": "Åpne skapet under vasken." },
+          { "en": "Find the blue handle on the right.", "no": "Finn den blå hendelen på høyre side." },
+          { "en": "Turn clockwise until it stops.", "no": "Vri med klokken til den stopper." }
+        ],
+        "stopAndCall": [
+          { "en": "Water does not slow/stop after turning the valve.", "no": "Vannet stopper ikke etter at du har vridd på kranen." },
+          { "en": "Water is near electrical outlets or the breaker panel.", "no": "Det er vann nær stikkontakter eller sikringsskapet." },
+          { "en": "You see sparks, smoke, or smell burning.", "no": "Du ser gnister/røyk eller kjenner brent lukt." }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/3566138/pexels-photo-3566138.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "id": "breaker-panel",
+        "type": "electric",
+        "title": { "en": "⚡ Breaker Panel", "no": "⚡ Sikringsskap" },
+        "locationText": {
+          "en": "Hallway closet, upper left corner (gray box).",
+          "no": "Garderobeskap i gangen, øverst til venstre (grå boks)."
+        },
+        "steps": [
+          { "en": "Open the hallway closet.", "no": "Åpne skapet i gangen." },
+          { "en": "Locate the gray electrical box.", "no": "Finn den grå boksen (sikringsskapet)." },
+          { "en": "If a breaker is OFF, flip it back ON once.", "no": "Hvis en sikring står AV, slå den PÅ én gang." }
+        ],
+        "stopAndCall": [
+          { "en": "You see sparks, smoke, or a burning smell.", "no": "Du ser gnister/røyk eller kjenner brent lukt." },
+          { "en": "A breaker keeps tripping repeatedly.", "no": "En sikring slår seg av flere ganger." },
+          { "en": "There is water nearby.", "no": "Det er vann i nærheten." }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/3566143/pexels-photo-3566143.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "id": "fire-extinguisher",
+        "type": "fire",
+        "title": { "en": "🧯 Fire Extinguisher", "no": "🧯 Brannslukker" },
+        "locationText": {
+          "en": "Next to the front door (red cylinder).",
+          "no": "Ved siden av inngangsdøren (rød sylinder)."
+        },
+        "steps": [
+          { "en": "Pull the safety pin.", "no": "Trekk ut splinten." },
+          { "en": "Aim at the base of the fire.", "no": "Sikt mot bunnen av flammene." },
+          { "en": "Squeeze and sweep side to side.", "no": "Klem inn håndtaket og fei fra side til side." }
+        ],
+        "stopAndCall": [
+          { "en": "If the fire is growing or smoke is heavy: leave immediately.", "no": "Hvis brannen vokser eller det er mye røyk: gå ut med en gang." },
+          { "en": "Close the door behind you and call emergency services.", "no": "Lukk døren bak deg og ring nødetatene." }
+        ],
+        "imageUrl": "https://images.pexels.com/photos/6646914/pexels-photo-6646914.jpeg?auto=compress&cs=tinysrgb&w=800"
+      }
+    ]
+  },
+
+  "categories": [
+    {
+      "id": "house",
+      "name": { "en": "House Essentials", "no": "Viktig i leiligheten" },
+      "items": [
+        {
+          "id": "trash-recycling",
+          "title": { "en": "Trash & Recycling", "no": "Søppel og resirkulering" },
+          "locationText": {
+            "en": "Trash bags are under the kitchen sink. Building bins: [ADD EXACT LOCATION]. Blue bin = paper.",
+            "no": "Søppelposer er under kjøkkenvasken. Avfallsboder: [LEGG INN NØYAKTIG STED]. Blå beholder = papir."
+          },
+          "imageUrl": "https://images.pexels.com/photos/3735218/pexels-photo-3735218.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+          "id": "router",
+          "title": { "en": "Wi-Fi Router (Do not reset)", "no": "Wi-Fi-router (ikke reset)" },
+          "locationText": {
+            "en": "Living room near the TV shelf. Do NOT press reset unless the host tells you.",
+            "no": "Stue ved TV-hylla. IKKE trykk på reset med mindre verten sier det."
+          },
+          "imageUrl": "https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=800"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "name": { "en": "Tools & Safety", "no": "Verktøy og sikkerhet" },
+      "items": [
+        {
+          "id": "tool-set",
+          "title": { "en": "Tool Set", "no": "Verktøykasse" },
+          "locationText": {
+            "en": "Utility closet, red toolbox.",
+            "no": "Bod/skap, rød verktøykasse."
+          },
+          "imageUrl": "https://images.pexels.com/photos/5824882/pexels-photo-5824882.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+          "id": "first-aid",
+          "title": { "en": "First Aid Kit", "no": "Førstehjelpsutstyr" },
+          "locationText": {
+            "en": "Bathroom cabinet, top shelf.",
+            "no": "Baderomsskap, øverste hylle."
+          },
+          "imageUrl": "https://images.pexels.com/photos/4053086/pexels-photo-4053086.jpeg?auto=compress&cs=tinysrgb&w=800"
+        }
+      ]
+    },
+    {
+      "id": "appliances",
+      "name": { "en": "Appliances", "no": "Hvitevarer" },
+      "items": [
+        {
+          "id": "washer",
+          "title": { "en": "Washing Machine", "no": "Vaskemaskin" },
+          "locationText": { "en": "Bathroom.", "no": "Bad." },
+          "imageUrl": "https://images.pexels.com/photos/581365/pexels-photo-581365.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+          "id": "oven",
+          "title": { "en": "Oven & Stove", "no": "Stekeovn og komfyr" },
+          "locationText": { "en": "Kitchen.", "no": "Kjøkken." },
+          "imageUrl": "https://images.pexels.com/photos/1909791/pexels-photo-1909791.jpeg?auto=compress&cs=tinysrgb&w=800"
+        }
+      ]
+    }
+  ],
+
+  "wifi": {
+    "name": "NordicFjord_Guest",
+    "password": "Welcome2Narvik!",
+    "troubleshooting": [
+      {
+        "en": "Turn Wi-Fi off and on again on your phone.",
+        "no": "Slå Wi-Fi av og på igjen på telefonen."
+      },
+      {
+        "en": "Disconnect and reconnect to the network.",
+        "no": "Koble fra og koble til nettverket igjen."
+      },
+      {
+        "en": "If it still fails, check the router power light (see Router location).",
+        "no": "Hvis det fortsatt ikke virker, sjekk strømlyset på routeren (se Router)."
+      },
+      {
+        "en": "Do NOT press the router reset button unless the host tells you.",
+        "no": "IKKE trykk på reset-knappen på routeren med mindre verten sier det."
+      }
+    ]
+  },
+
+  "rules": [
+    { "en": "No smoking inside (building policy + smoke alarms).", "no": "Ikke røyk inne (byggregler + røykvarslere)." },
+    { "en": "Quiet hours: 22:00 – 08:00 (sound travels to neighbors).", "no": "Nattetid: 22:00 – 08:00 (lyd bærer til naboer)." },
+    { "en": "Remove shoes at the entrance (keeps floors clean).", "no": "Ta av sko ved inngangen (holder gulvet rent)." },
+    { "en": "Recycle: blue bin for paper (please sort correctly).", "no": "Resirkulering: blå beholder for papir (sorter riktig)." }
+  ],
+
+  "checkout": [
+    { "en": "Turn off lights & appliances.", "no": "Slå av lys og apparater." },
+    { "en": "Set heating to 18°C.", "no": "Sett varmen til 18°C." },
+    { "en": "Take out trash / recycling to the building bins.", "no": "Ta ut søppel/resirkulering til avfallsbodene." },
+    { "en": "Leave key in the lockbox and ensure the door is locked.", "no": "Legg nøkkelen i nøkkelboksen og sjekk at døren er låst." }
+  ]
+}
